@@ -1,0 +1,13 @@
+.todo{
+    border:1px solid black;
+    margin-bottom: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:3px 20px;
+}
+.todoRow{
+    background-color: aqua;
+    padding:2px 4px;
+    width:fit-content;
+}

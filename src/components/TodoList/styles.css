@@ -1,0 +1,11 @@
+.table{
+    border:2px dotted green;
+    width:400px;
+    display:flex;
+    flex-direction: column;
+}
+
+.todoList{
+    display:flex;
+    flex-direction: column;
+}

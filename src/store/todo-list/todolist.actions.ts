@@ -3,6 +3,7 @@ import { TodoAction, TodoPayload } from './todolist.types';
 export enum TodoActionTypeNames {
     TODO_POST_ACTION = 'TODO_POST_ACTION',
     TODO_DELETE_ACTION = 'TODO_DELETE_ACTION',
+    TODO_EDIT_ACTION = 'TODO_EDIT_ACTION',
 };
 
 export const createTodoItemAction = (todo:TodoPayload):TodoAction => ({
@@ -15,3 +16,10 @@ export const deleteTodoItemAction = (id:string) => ({
     payload: id,
 });
 
+export const editTodoItemAction = (todo: TodoPayload, id: string) => ({
+    type: TodoActionTypeNames.TODO_EDIT_ACTION,
+    payload: {
+        todo,
+        id
+    },
+})

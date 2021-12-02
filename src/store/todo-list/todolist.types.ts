@@ -1,6 +1,6 @@
 import { TodoActionTypeNames } from './todolist.actions';
 
-interface TodoItem {
+export interface TodoItem {
     id: string;
     header: string;
     content: string;
@@ -20,10 +20,18 @@ interface TodoDeleteType {
     payload: string;
 }
 
+interface TodoEditType {
+    type: TodoActionTypeNames.TODO_EDIT_ACTION;
+    payload: {
+        todo:TodoPayload, 
+        id:string
+    };
+}
+
 export interface TodoPayload {
     header: string;
     content: string;
 }
 
-export type TodoAction = TodoPostType | TodoDeleteType
+export type TodoAction = TodoPostType | TodoDeleteType | TodoEditType
 

@@ -3,7 +3,7 @@ import { AnyAction } from "redux";
 import { TodoActionTypeNames } from "./todolist.actions";
 import { todoCreator } from "./todolist.util";
 
-
+ 
 const initialState:TodoList = {
     todos:[
         {
@@ -31,6 +31,7 @@ export const todoReducer = (state=initialState, action:AnyAction):TodoList => {
                 todos,
             }
         }
+        
         default:
             return state;
     }
