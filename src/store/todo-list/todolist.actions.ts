@@ -1,5 +1,5 @@
 import { TodoAction, TodoPayload } from './todolist.types';
-
+ 
 export enum TodoActionTypeNames {
     TODO_POST_ACTION = 'TODO_POST_ACTION',
     TODO_DELETE_ACTION = 'TODO_DELETE_ACTION',
