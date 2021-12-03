@@ -3,3 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.App {
+    display: flex;
+    /* temp */
+    border: 4px solid red;
+    align-items: center;
+    justify-content: center;
+    
+}

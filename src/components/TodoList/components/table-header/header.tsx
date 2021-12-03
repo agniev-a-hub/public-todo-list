@@ -24,7 +24,8 @@ export const Header = ({ count, create }: Props) => {
     }
     return(
         <div className="header">
-            <span> Current todo count: {count}</span>
+            <div className="headerCount"> Current todo count: {count}</div>
+            <div> My TODO List: </div>
             <div className="createSection">
                 <Input className="inputRow" name="header" handler={onChange} value={todo.header} />
                 <Input className="inputRow" name="content" handler={onChange} value={todo.content} />

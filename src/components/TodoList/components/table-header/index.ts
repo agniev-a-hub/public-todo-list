@@ -5,6 +5,7 @@ import { todosCountSelector } from '../../../../store/todo-list/todolist.selecto
 import { TodoPayload } from '../../../../store/todo-list/todolist.types';
 import { AppDispatch } from '../../../../store/index';
 import { createTodoItemAction } from '../../../../store/todo-list/todolist.actions';
+
 const mapStateToProps = createStructuredSelector({
     count: todosCountSelector,
 })

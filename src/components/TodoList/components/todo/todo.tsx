@@ -32,8 +32,8 @@ export const Todo = ({ todo: { content, header, id }, onDeleteTodo, edit }: Prop
     }
     return(
         <div className="todo">
-            <p className="todoRow">{header}</p>
-            <p className="todoRow"> {content}</p>
+            <p className="todoRow"> Header: {header} </p>
+            <p className="todoRow"> Content: {content}</p>
             <div className="buttonRow">
                 <button className="button" onClick={onDelete}> Delete todo</button>
                 <button className="button" onClick={onEdit}> Edit</button>

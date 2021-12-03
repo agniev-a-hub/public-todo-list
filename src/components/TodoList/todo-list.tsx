@@ -6,7 +6,7 @@ import Header from './components/table-header';
 
 export const TodoList = ({todos}:Props) => {
     return (
-        <div className="table">
+        <div className="todoListLayout">
             <Header />
             <div className="todoList">
                 {
