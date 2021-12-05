@@ -10,7 +10,7 @@ interface Props {
 
 const todoInitState = {
     header: "",
-    content:""
+    content:"",
 }
 
 export const Header = ({ count, create }: Props) => {
@@ -24,13 +24,15 @@ export const Header = ({ count, create }: Props) => {
     }
     return(
         <div className="header">
-            <div className="headerCount"> Current todo count: {count}</div>
-            <div> My TODO List: </div>
+            <div className='headName'> My TODO List: </div>
+            <div className="headerCount"> Current TODO count: {count}</div>
             <div className="createSection">
-                <Input className="inputRow" name="header" handler={onChange} value={todo.header} />
-                <Input className="inputRow" name="content" handler={onChange} value={todo.content} />
-                <div className="inputRow">
-                    <button onClick={addTodo} >Add Todo</button>
+                <div className='createSectionInput'>
+                    <Input className="inputRow" name="header" handler={onChange} value={todo.header} displayName='Header'/>
+                    <Input className="inputRow" name="content" handler={onChange} value={todo.content} displayName='Content'/>
+                </div>
+                <div className="inputRowSubmit">
+                    <button className='inputRowSubmitButton' onClick={addTodo} >Add Todo</button>
                 </div>
             </div>
         </div>

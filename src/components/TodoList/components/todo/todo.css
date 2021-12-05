@@ -17,3 +17,15 @@
     padding: 2px;
     border: 1px solid black;
 }
+
+.button {
+    align-items: right;
+    justify-content: space-between;
+    padding: 2px 75px;
+    margin: 2px 10px;
+}
+
+.inputRow {
+    resize: horizontal;
+    width: 100px;
+}

@@ -1,0 +1,15 @@
+.WebsiteHeader {
+    display: flex;
+    width: 100%;
+    margin: 0px 2px;
+}
+
+.headerItem {
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgb(185, 255, 226), rgb(255, 255, 255));
+    width: 100%;
+    height: 5rem;
+}

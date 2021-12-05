@@ -23,8 +23,8 @@ export const Todo = ({ todo: { content, header, id }, onDeleteTodo, edit }: Prop
     }
     if (isEditing) {
         return <div className="todo">
-                    <Input className="inputRow" name="header" handler={onChange} value={todo.header} />
-                    <Input className="inputRow" name="content" handler={onChange} value={todo.content} />
+                    <Input className="inputRow" name="header" handler={onChange} value={todo.header} displayName='Header'/>
+                    <Input className="inputRow" name="content" handler={onChange} value={todo.content} displayName='Content'/>
                     <div className="buttonRow">
                         <button className="button" onClick={onSubmit}> Submit changes</button>
                     </div>
