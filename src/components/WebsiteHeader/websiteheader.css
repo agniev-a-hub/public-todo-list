@@ -9,7 +9,14 @@
     flex:1;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, rgb(185, 255, 226), rgb(255, 255, 255));
+    background: rgb(190, 190, 190);
     width: 100%;
     height: 5rem;
+    margin: 2px;
+    border-radius: 7px;
+}
+
+.headerItem:hover {
+    transition-duration: 1s;
+    background-color: hotpink;
 }

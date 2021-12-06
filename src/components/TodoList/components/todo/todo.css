@@ -10,12 +10,13 @@
 
 }
 .todoRow{
-    background-color: aqua;
+    background-color: rgb(255, 250, 205);
     padding:2px 4px;
     width: 95%;
     resize: none;
     padding: 2px;
-    border: 1px solid black;
+    border: 1px double teal;
+    margin: 1px 0px;
 }
 
 .button {

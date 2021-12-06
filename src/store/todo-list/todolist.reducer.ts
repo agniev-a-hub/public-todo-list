@@ -5,13 +5,7 @@ import { todoCreator } from "./todolist.util";
 
  
 const initialState:TodoList = {
-    todos:[
-        {
-            id:'test_id',
-            header:'test_header',
-            content:'test_content'
-        }
-    ]
+    todos:[]
 }
 
 export const todoReducer = (state=initialState, action:AnyAction):TodoList => {

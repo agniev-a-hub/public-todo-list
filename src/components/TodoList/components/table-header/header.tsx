@@ -10,7 +10,7 @@ interface Props {
 
 const todoInitState = {
     header: "",
-    content:"",
+    content: "",
 }
 
 export const Header = ({ count, create }: Props) => {
